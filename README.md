@@ -22,6 +22,7 @@ Gameplay functionality in Javascript:
 
 ## Unsolved Problems
 * The game prompts the user if they would like to play again after win/draw. It should continue to prompt the user if the input is invalid.
+* The game does not declare a draw until the last move of the game. At turn 8, the game should check if victory is still feasible, and declare a draw if it isn't. A further improvement would be to enhance the predictive capabilities of the game, declaring the outcome of the game as early as possible.
 
 ## Possible improvements
 The following features would be good to include in the game. These are in addition to the ideas suggested in the bonus section of the assignment:
