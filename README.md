@@ -28,4 +28,4 @@ Gameplay functionality in Javascript:
 The following features would be good to include in the game. These are in addition to the ideas suggested in the bonus section of the assignment:
 * The game should display who the current player is
 * For users that want to study their moves after the game is won/drawn, there should be a feature that shoud allow the player to go through their previous moves.
-* I have used location.reset in order to reset the game. This a relatively simple page so reloading it is instantaneous. But for pages with more content, it could lead to a lag that would impact on gameplay. Also, using location.reset is not ideal if the game is embedded into a page as an applet and only want the game to reset and not the entire page.
+* I have used location.reset in order to reset the game. This a relatively simple page so reloading it is instantaneous. But for pages with more content, it could lead to a lag that would impact on gameplay. Also, using location.reset is not ideal if the game is embedded into a page as an applet and we only want the game to reset and not the entire page.
