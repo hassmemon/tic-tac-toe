@@ -212,7 +212,7 @@ function victoryCheck() {
 }
 
 function drawCheck() {
-    if (score == 8 && victory == false) {
+    if (score > 8 && victory == false) {
         if (prompt('Draw! Play Again? Y/N') == "Y" || "y") {
             location.reload()
     }
