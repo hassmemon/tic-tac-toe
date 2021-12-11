@@ -1,0 +1,15 @@
+body {
+    max-width: 500px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 75px;
+}
+
+.box {
+    border: 5px solid #000000;
+    text-align: center;
+    padding: 20px;
+}
