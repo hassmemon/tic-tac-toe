@@ -2,14 +2,37 @@ body {
     max-width: 500px;
 }
 
+
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 75px;
-}
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    margin: 0 auto;
+    flex-direction: column;
+    justify-items: center;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+} 
 
 .box {
-    border: 5px solid #000000;
-    text-align: center;
-    padding: 20px;
+    width: 100%;
+    border: 5px solid #4c65af;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+}
+
+#reset {
+  background-color: #4c65af;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
