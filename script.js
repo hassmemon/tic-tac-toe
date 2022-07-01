@@ -15,8 +15,12 @@ for (let i = 0; i < boxDivs.length; i++) {
             playTurn();
             if (player == 'O') {
                 boxes[boxIndex] = 0;
+                document.querySelector('#player').innerHTML =
+                    '<h2>Player 2, your turn. Place X in an empty box</h2>';
             } else {
                 boxes[boxIndex] = 1;
+                document.querySelector('#player').innerHTML =
+                    '<h2>Player 1, your turn. Place O in an empty box</h2>';
             }
             victoryCheck();
             drawCheck();
@@ -29,7 +33,9 @@ document.querySelector('#reset').addEventListener('click', function (event) {
 });
 
 function playerSelector() {
-    if (turns % 2 == 1) {
+    if (turns == 0) {
+        player = 'O';
+    } else if (turns % 2 == 1) {
         player = 'X';
     } else {
         player = 'O';
@@ -52,7 +58,7 @@ function victoryCheck() {
         (boxes[2] == 0 && boxes[5] == 0 && boxes[8] == 0)
     ) {
         victory = true;
-        if (prompt('Noughts Wins! Play Again? Y/N') == 'Y' || 'y') {
+        if (prompt('Naughts wins. Play Again? Y/N') == 'Y' || 'y') {
             location.reload();
         }
     } else if (
@@ -66,7 +72,7 @@ function victoryCheck() {
         (boxes[2] == 1 && boxes[5] == 1 && boxes[8] == 1)
     ) {
         victory = true;
-        if (prompt('Cross Wins! Play Again? Y/N') == 'Y' || 'y') {
+        if (prompt('Cross wins. Play Again? Y/N') == 'Y' || 'y') {
             location.reload();
         }
     }

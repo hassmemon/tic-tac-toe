@@ -1,7 +1,10 @@
 body {
     max-width: 500px;
 }
-
+h1 {
+    font-size: 24;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .grid {
     display: grid;
