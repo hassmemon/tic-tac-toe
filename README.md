@@ -1,5 +1,7 @@
 # tic-tac-toe
 
+[Play](https://hassmemon.github.io/tic-tac-toe/)
+
 ## Tech Used
 
 -   HTML
