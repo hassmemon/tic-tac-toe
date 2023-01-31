@@ -1,6 +1,6 @@
 # tic-tac-toe
 
-Play
+[Play](https://hassmemon.github.io/tic-tac-toe/)
 
 ## Tech Used
 
