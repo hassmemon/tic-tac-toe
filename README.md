@@ -1,5 +1,7 @@
 # tic-tac-toe
 
+Play
+
 ## Tech Used
 
 -   HTML
